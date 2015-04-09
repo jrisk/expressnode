@@ -12,7 +12,11 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+<<<<<<< HEAD
 app.set('view engine', 'hjs');
+=======
+app.set('view engine', 'jade');
+>>>>>>> 17685e7dd6821fd27149f7519873b699d5dc3f0c
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -20,7 +24,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+<<<<<<< HEAD
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
+=======
+>>>>>>> 17685e7dd6821fd27149f7519873b699d5dc3f0c
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
